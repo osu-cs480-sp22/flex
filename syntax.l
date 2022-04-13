@@ -30,7 +30,7 @@ cat|dog {
 ca*t {
     /* cat, caaaaaat, caaaaaaaaaaaat, ct */
     std::cout << "Matched: " << yytext << std::endl;
-    std::cout << "  it's " << yylen << " characters long" << std::endl;
+    std::cout << "  it's " << yyleng << " characters long" << std::endl;
     std::cout << "  on line number " << yylineno << std::endl;
 }
 
